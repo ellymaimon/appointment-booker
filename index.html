@@ -9,11 +9,37 @@
 </head>
 
 <body>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="">
+          <h1>Al Pacino</h1>
+        </div>
+      </div>
+    </div>
 
-  <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-    CLICK HERE TO BOOK WIDDUS
-  </button>
+    <div class="row">
+      <div class="col">
+        <div>
+          <img class="img-fluid headerImg"src="img/pacino.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="bookClicker">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+            CLICK HERE TO BOOK WIDDUS
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
 
   <!-- Modal -->
   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -26,11 +52,28 @@
           </button>
         </div>
         <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <form class="appt-form">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number:</label>
+              <input type="text" class="form-control" id="phone">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="text" class="form-control" id="email">
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+
         </div>
       </div>
     </div>
